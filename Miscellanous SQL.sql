@@ -27,7 +27,8 @@ create table desig(
     designame varchar(15)
     );
     
-    
+
+
 create table emp(
 	empcode varchar(15) PRIMARY KEY, 
     empname varchar(60), 
@@ -39,9 +40,10 @@ create table emp(
     supcode varchar(15), 
     gradecode varchar(15),
     gradelevel varchar(30), 
-	basicpay integer
+	basicpay int
     );
-    
+
+
     
 create table salary(
 	empcode varchar(15), 
@@ -51,6 +53,7 @@ create table salary(
     deduct DECIMAL(10,2),
     PRIMARY KEY(empcode, salmonth)
     );
+
 
 
 create table history(
@@ -63,7 +66,9 @@ create table history(
     PRIMARY KEY(empcode, changedate, desigcode, gradecode, gradelevel)
     );
     
-    
+
+
+
 ALTER TABLE emp 
 	ADD FOREIGN KEY (deptcode) REFERENCES dept(deptcode),
     ADD FOREIGN KEY (desigcode) REFERENCES desig(desigcode),
