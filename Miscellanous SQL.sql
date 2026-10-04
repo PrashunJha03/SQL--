@@ -75,16 +75,19 @@ ALTER TABLE emp
     ADD FOREIGN KEY (supcode) REFERENCES emp(empcode),
     ADD FOREIGN KEY (gradecode, gradelevel) REFERENCES grade(gradecode, gradelevel);
     
-    
+
+
 ALTER TABLE history
     add foreign key (empcode) references emp (empcode),
     add foreign key (desigcode) references desig(desigcode),
     add foreign key (gradecode, gradelevel) references grade(gradecode, gradelevel);
     
-    
+
+
 ALTER TABLE salary 
 	add foreign key (empcode) references emp(empcode);
-    
+
+
     
 INSERT INTO DEPT VALUES
 	('ACCT', 'Accounts', 19),
