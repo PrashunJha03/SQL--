@@ -531,6 +531,8 @@ delimiter ;
 call getempdetails(7782);
 
 
+
+
 delimiter //
 create procedure getemp(in empno int, out dept varchar(15))
 begin 
@@ -541,6 +543,8 @@ delimiter ;
 call getemp(7782, @dept);
 
 select @dept;
+
+
 
 
 delimiter //
