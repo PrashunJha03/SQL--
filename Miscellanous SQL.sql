@@ -3,6 +3,7 @@
 CREATE DATABASE DAC_DBT;
 USE DAC_DBT;
 
+
 create table dept(
 	deptcode VARCHAR(15) PRIMARY KEY, 
 	deptname VARCHAR(60), 
