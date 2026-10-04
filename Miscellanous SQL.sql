@@ -20,7 +20,8 @@ create table grade(
     PRIMARY KEY(gradecode,gradelevel)
     );
     
-    
+
+
 create table desig(
 	desigcode varchar(15) PRIMARY KEY, 
     designame varchar(15)
