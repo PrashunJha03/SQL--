@@ -10,7 +10,8 @@ create table dept(
 	budget INT
     );
     
-    
+
+
 create table grade(
 	gradecode varchar(15), 
     gradelevel varchar(30), 
